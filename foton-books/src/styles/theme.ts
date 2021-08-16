@@ -4,9 +4,15 @@ export default {
   },
   font: {
     family: 'SFProText, -apple-system, BlinkMacSystemFont, Roboto, sans-serif',
-    light: 300,
-    normal: 400,
-    bold: 600,
+    weights: {
+      light: 300,
+      normal: 400,
+      bold: 600
+    },
+    types: {
+      text: 'SFProText',
+      display: 'SFProDisplay'
+    },
     sizes: {
       xxsmall: '0.625rem',
       xsmall: '0.75rem',
