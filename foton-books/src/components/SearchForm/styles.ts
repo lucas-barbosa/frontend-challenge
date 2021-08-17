@@ -32,5 +32,3 @@ export const Input = styled.input`
     }
   `}
 `;
-
-export const Icon = styled.img``;

@@ -1,6 +1,7 @@
-import * as S from './styles';
-import icon from './icon.svg';
 import { useState } from 'react';
+import { SearchIcon } from 'components/Icons';
+
+import * as S from './styles';
 
 type SearchFormProps = {
   initialValue?: string;
@@ -20,7 +21,7 @@ const SearchForm = ({ initialValue = '', onChange }: SearchFormProps) => {
   return (
     <S.Wrapper>
       <label htmlFor="search" aria-label="Search book">
-        <S.Icon src={icon} title="search icon" />
+        <SearchIcon title="search icon" />
       </label>
 
       <S.Input
