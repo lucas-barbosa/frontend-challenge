@@ -11,5 +11,9 @@ module.exports = {
     '!src/**/mock.ts'
   ],
   modulePaths: ['<rootDir>/src/', '<rootDir>/.jest'],
-  setupFilesAfterEnv: ['<rootDir>/.jest/setup.ts']
+  setupFilesAfterEnv: ['<rootDir>/.jest/setup.ts'],
+  transform: {
+    '^.+\\.tsx?$': 'babel-jest',
+    '^.+\\.svg$': '<rootDir>/.jest/svgTransform.js'
+  }
 };
