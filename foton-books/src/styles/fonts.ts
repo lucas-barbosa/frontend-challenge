@@ -19,6 +19,15 @@ export const SFProDisplay = css`
 
   @font-face {
     font-family: 'SFProDisplay';
+    font-style: italic;
+    font-weight: 400;
+    src: local('SFProDisplay Regular Italic'),
+      local('SFProDisplay Regular Italic'),
+      url('/fonts/SFProDisplay/SFProDisplay-Regular-Italic.woff') format('woff');
+  }
+
+  @font-face {
+    font-family: 'SFProDisplay';
     font-style: normal;
     font-weight: 600;
     src: local('SFProDisplay Bold'), local('SFProDisplay Bold'),
