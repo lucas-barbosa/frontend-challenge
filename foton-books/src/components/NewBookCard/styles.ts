@@ -1,4 +1,5 @@
 import styled, { css } from 'styled-components';
+import * as Symbols from 'components/Symbols/styles';
 
 type WrapperProps = {
   active?: boolean;
@@ -29,6 +30,31 @@ export const Wrapper = styled.article<WrapperProps>`
     }
 
     ${active && WrapperModifiers.active}
+
+    ${Symbols.TriangleWrapper} {
+      position: absolute;
+      left: 61.95%;
+      right: 25.97%;
+      top: 2.73%;
+      bottom: 76.97%;
+    }
+
+    ${Symbols.OutlinedCircleWrapper} {
+      position: absolute;
+      left: 52.94%;
+      right: 40.44%;
+      top: 10.07%;
+      bottom: 76.98%;
+    }
+
+    ${Symbols.RectangleWrapper} {
+      position: absolute;
+      left: 53.37%;
+      right: 29.72%;
+      top: 68.7%;
+      bottom: 28.42%;
+      transform: rotate(14deg);
+    }
   `}
 `;
 
@@ -84,32 +110,6 @@ export const Cover = styled.img`
     width: 70px;
     height: 100px;
   `}
-`;
-
-export const Triangle = styled.svg`
-  position: absolute;
-  left: 61.95%;
-  right: 25.97%;
-  top: 2.73%;
-  bottom: 76.97%;
-`;
-
-export const Circle = styled.svg`
-  position: absolute;
-  left: 52.94%;
-  right: 40.44%;
-  top: 10.07%;
-  bottom: 76.98%;
-`;
-
-export const Retangle = styled.svg`
-  position: absolute;
-  left: 53.37%;
-  right: 29.72%;
-  top: 68.7%;
-  bottom: 28.42%;
-
-  transform: rotate(14deg);
 `;
 
 export const WavesWrapper = styled.div`
