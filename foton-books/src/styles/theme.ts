@@ -19,7 +19,8 @@ export default {
       small: '0.875rem',
       normal: '1rem',
       large: '1.125rem',
-      xlarge: '1.5rem'
+      xlarge: '1.5rem',
+      xxlarge: '1.688rem'
     }
   },
   colors: {

@@ -5,6 +5,7 @@ import * as fonts from './fonts';
 export default createGlobalStyle`
   ${fonts.SFProText}
   ${fonts.SFProDisplay}
+  @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Roboto&display=swap');
 
   * {
     margin: 0;
@@ -25,6 +26,7 @@ export default createGlobalStyle`
     }
 
     body {
+      background: #fffcf9;
       font-family: ${theme.font.family};
       font-size: ${theme.font.sizes.medium};
     }
