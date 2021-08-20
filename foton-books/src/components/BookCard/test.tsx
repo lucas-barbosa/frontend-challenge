@@ -16,7 +16,7 @@ describe('<BookCard />', () => {
 
     expect(
       screen.getByRole('img', { name: `${props.title} by ${props.author}` })
-    ).toHaveAttribute('src', props.image);
+    ).toHaveAttribute('src', props.cover);
   });
 
   it('should have a link to book page on image', () => {

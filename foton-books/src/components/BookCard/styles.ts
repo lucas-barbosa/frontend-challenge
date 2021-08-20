@@ -2,6 +2,7 @@ import styled, { css } from 'styled-components';
 
 export const Wrapper = styled.article`
   color: #313131cc;
+  max-width: 100px;
 `;
 
 export const Link = styled.a`

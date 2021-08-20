@@ -3,14 +3,19 @@ import * as S from './styles';
 export type BookCardProps = {
   id: string;
   title: string;
-  author: string;
-  image?: string;
+  author?: string;
+  cover?: string;
 };
 
-const BookCard = ({ id, title, author, image }: BookCardProps) => (
+const BookCard = ({
+  id,
+  title,
+  cover,
+  author = 'unknown author'
+}: BookCardProps) => (
   <S.Wrapper>
     <S.Link href={`/book-details/${id}`}>
-      <S.Image src={image} alt={`${title} by ${author}`} />
+      <S.Image src={cover} alt={`${title} by ${author}`} />
     </S.Link>
 
     <S.Title>{title}</S.Title>
