@@ -37,6 +37,7 @@ export const Cover = styled.img`
   border-radius: 1px;
   width: 88px;
   height: 130px;
+  filter: drop-shadow(5px 7px 32px rgba(140, 170, 58, 0.193701));
 `;
 
 export const Content = styled.div``;
@@ -55,6 +56,7 @@ export const SymbolsGroup = styled.div`
     height: 18px;
     left: 223px;
     top: -6px;
+    color: rgba(214, 209, 177, 0.09);
   }
 
   ${Symbols.CircleWrapper} {
