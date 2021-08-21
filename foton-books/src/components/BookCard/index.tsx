@@ -10,7 +10,7 @@ export type BookCardProps = {
 const BookCard = ({
   id,
   title,
-  cover,
+  cover = '/images/generic-cover.png',
   author = 'unknown author'
 }: BookCardProps) => (
   <S.Wrapper>
