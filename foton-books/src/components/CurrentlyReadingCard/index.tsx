@@ -2,24 +2,25 @@ import { Circle, OutlinedCircle, Rectangle, Waves } from 'components/Symbols';
 import * as S from './styles';
 
 export type CurrentlyReadingCardProps = {
+  id: string;
   title: string;
-  author: string;
-  currentlyChapter: number;
+  author?: string;
+  currentlyChapter?: number;
   totalChapters: number;
-  cover: string;
+  cover?: string;
 };
 
 const CurrentlyReadingCard = ({
   title,
-  author,
-  currentlyChapter,
-  totalChapters,
-  cover
+  currentlyChapter = 2,
+  totalChapters = 9,
+  author = 'unknown author',
+  cover = '/images/generic-cover.png'
 }: CurrentlyReadingCardProps) => (
-  <S.Wrapper>
+  <S.Wrapper title={`${title} by ${author}`}>
     <S.Content>
       <S.Title>{title}</S.Title>
-      <S.Author>by {author}</S.Author>
+      <S.Author>by {author || 'unknown author'}</S.Author>
 
       <S.Chapters
         aria-label={`Chapter ${currentlyChapter} From ${totalChapters}`}

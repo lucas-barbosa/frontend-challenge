@@ -1,4 +1,5 @@
 export default {
+  id: 'teste',
   title: 'Originals',
   author: 'Adam Grant',
   currentlyChapter: 2,

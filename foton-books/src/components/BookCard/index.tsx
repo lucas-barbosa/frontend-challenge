@@ -22,7 +22,7 @@ const BookCard = ({
     </Link>
 
     <S.Title>{title}</S.Title>
-    <S.Author>by {author}</S.Author>
+    <S.Author>by {author || 'unknown author'}</S.Author>
   </S.Wrapper>
 );
 

@@ -40,7 +40,16 @@ export const Cover = styled.img`
   filter: drop-shadow(5px 7px 32px rgba(140, 170, 58, 0.193701));
 `;
 
-export const Content = styled.div``;
+export const Content = styled.div`
+  max-width: 115px;
+
+  ${Title},
+  ${Author} {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+  }
+`;
 
 export const SymbolsGroup = styled.div`
   position: absolute;

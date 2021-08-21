@@ -8,7 +8,7 @@ export type NewBookCardProps = {
   id: string;
   title: string;
   author?: string;
-  count: number;
+  count?: number;
   cover?: string;
   active?: boolean;
 };
@@ -16,18 +16,18 @@ export type NewBookCardProps = {
 const NewBookCard = ({
   id,
   title,
-  author,
-  count,
-  cover,
+  count = 120,
+  author = 'unknown author',
+  cover = '/images/generic-cover.png',
   active = false
 }: NewBookCardProps) => (
   <Link href={`/book/${id}`} passHref>
-    <S.Wrapper active={active}>
+    <S.Wrapper active={active} title={`${title} by ${author}`}>
       <S.Content>
-        <div>
+        <S.Info>
           <S.Title>{title}</S.Title>
-          <S.Author>{author}</S.Author>
-        </div>
+          <S.Author>{author || 'unknown author'}</S.Author>
+        </S.Info>
 
         <S.Count aria-label={`${count}+ Read Now`}>
           <StatsIcon />

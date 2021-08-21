@@ -25,6 +25,7 @@ export const Wrapper = styled.a<WrapperProps>`
     transition: color 0.3s, transform 0.3s;
     transform-origin: left;
     text-decoration: none;
+    user-select: text;
     width: 260px;
 
     :hover {
@@ -86,6 +87,17 @@ export const Author = styled.div`
     line-height: ${theme.font.sizes.normal};
     letter-spacing: 1.29px;
   `}
+`;
+
+export const Info = styled.div`
+  max-width: 120px;
+
+  ${Title},
+  ${Author} {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+  }
 `;
 
 export const Count = styled.div`

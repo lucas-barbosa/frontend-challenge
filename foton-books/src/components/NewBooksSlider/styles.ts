@@ -2,10 +2,6 @@ import styled from 'styled-components';
 import * as CardStyles from 'components/NewBookCard/styles';
 
 export const Wrapper = styled.div`
-  ${CardStyles.Wrapper} {
-    margin-right: 20px;
-  }
-
   .slick-slider {
     position: relative;
 
@@ -73,7 +69,7 @@ export const Wrapper = styled.div`
   .slick-slide {
     display: none;
     float: left;
-
+    margin-right: 20px;
     height: 100%;
     min-height: 1px;
   }
@@ -107,5 +103,6 @@ export const Wrapper = styled.div`
   }
   .slick-active {
     margin-left: 1px;
+    margin-right: 30px;
   }
 `;
