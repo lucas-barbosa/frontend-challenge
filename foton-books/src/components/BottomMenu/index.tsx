@@ -1,10 +1,11 @@
 import * as S from './styles';
 
 import { HomeIcon, LibraryIcon, ProfileIcon } from 'components/Icons';
+import Container from 'components/Container';
 
 const BottomMenu = () => (
   <S.Wrapper>
-    <S.Nav>
+    <Container as={S.Nav}>
       <S.Link href="" role="link" active>
         <HomeIcon title="home link" />
         <span>Home</span>
@@ -19,7 +20,7 @@ const BottomMenu = () => (
         <ProfileIcon title="profile link" />
         <span>Profile</span>
       </S.Link>
-    </S.Nav>
+    </Container>
   </S.Wrapper>
 );
 

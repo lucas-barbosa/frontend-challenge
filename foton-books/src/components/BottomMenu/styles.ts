@@ -2,6 +2,7 @@ import styled, { css } from 'styled-components';
 
 export const Wrapper = styled.footer`
   background: #fff;
+  width: 100%;
 `;
 
 export const Nav = styled.nav`
