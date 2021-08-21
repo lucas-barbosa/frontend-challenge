@@ -12,7 +12,7 @@ const WrapperModifiers = {
   `
 };
 
-export const Wrapper = styled.article<WrapperProps>`
+export const Wrapper = styled.a<WrapperProps>`
   ${({ theme, active }) => css`
     background: ${active ? '#00173d' : '#451475'};
     border-radius: ${theme.border.radius};
@@ -23,6 +23,8 @@ export const Wrapper = styled.article<WrapperProps>`
     padding: 15px 20px;
     position: relative;
     transition: color 0.3s, transform 0.3s;
+    transform-origin: left;
+    text-decoration: none;
     width: 260px;
 
     :hover {
