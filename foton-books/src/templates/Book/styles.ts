@@ -34,6 +34,7 @@ export const Header = styled.header`
     position: relative;
 
     a {
+      cursor: pointer;
       position: relative;
       z-index: 2;
     }

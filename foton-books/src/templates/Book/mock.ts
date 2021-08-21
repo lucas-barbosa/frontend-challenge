@@ -1,4 +1,5 @@
 export default {
+  id: 'teste',
   cover:
     'http://books.google.com/books/content?id=dsz5AwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api',
   title: 'Hooked',

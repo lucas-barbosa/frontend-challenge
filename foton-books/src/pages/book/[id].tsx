@@ -23,9 +23,9 @@ export const getStaticProps: GetStaticProps = async ({ params }) => {
   if (!book) return { notFound: true };
 
   return {
-    revalidate: 60,
     props: {
-      ...book
+      ...book,
+      cover: book.cover ?? null
     }
   };
 };
