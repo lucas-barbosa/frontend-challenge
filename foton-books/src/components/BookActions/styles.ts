@@ -24,7 +24,16 @@ export const Button = styled.button`
     letter-spacing: 1px;
     line-height: ${theme.font.sizes.normal};
     padding: 20px;
+    position: relative;
     outline: none;
+
+    :not(:first-child):before {
+      content: '';
+      border: 1px solid rgba(151, 151, 151, 0.2);
+      position: absolute;
+      left: 0;
+      height: 1rem;
+    }
 
     svg {
       color: #cfcbd2;

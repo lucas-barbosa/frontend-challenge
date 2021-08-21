@@ -29,7 +29,11 @@ const Book = ({
           <BackIcon />
         </a>
 
-        <S.Cover src={cover ?? '/images/generic-cover.png'} alt={title} />
+        <S.Cover
+          src={cover ?? '/images/generic-cover.png'}
+          alt={title}
+          title={`${title} by ${author}`}
+        />
 
         <S.Symbols>
           <Oval />
