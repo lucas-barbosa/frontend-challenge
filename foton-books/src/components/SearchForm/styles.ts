@@ -8,6 +8,10 @@ export const Wrapper = styled.div`
   align-items: center;
   padding: 0 15px;
 
+  label {
+    display: flex;
+  }
+
   :focus-within {
     box-shadow: 0 0 8px rgba(212, 173, 134, 0.5);
   }
