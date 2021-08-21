@@ -29,6 +29,14 @@ export const SFProDisplay = css`
   @font-face {
     font-family: 'SFProDisplay';
     font-style: normal;
+    font-weight: 500;
+    src: local('SFProDisplay Medium'), local('SFProDisplay Medium'),
+      url('/fonts/SFProDisplay/SFProDisplay-Medium.woff') format('woff');
+  }
+
+  @font-face {
+    font-family: 'SFProDisplay';
+    font-style: normal;
     font-weight: 600;
     src: local('SFProDisplay Bold'), local('SFProDisplay Bold'),
       url('/fonts/SFProDisplay/SFProDisplay-Bold.woff') format('woff');
