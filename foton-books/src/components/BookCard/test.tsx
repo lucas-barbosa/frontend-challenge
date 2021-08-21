@@ -26,9 +26,6 @@ describe('<BookCard />', () => {
       name: `${props.title} by ${props.author}`
     });
 
-    expect(image.parentElement).toHaveAttribute(
-      'href',
-      `/book-details/${props.id}`
-    );
+    expect(image.parentElement).toHaveAttribute('href', `/book/${props.id}`);
   });
 });

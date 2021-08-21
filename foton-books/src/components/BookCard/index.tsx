@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import * as S from './styles';
 
 export type BookCardProps = {
@@ -14,9 +15,11 @@ const BookCard = ({
   author = 'unknown author'
 }: BookCardProps) => (
   <S.Wrapper>
-    <S.Link href={`/book-details/${id}`}>
-      <S.Image src={cover} alt={`${title} by ${author}`} />
-    </S.Link>
+    <Link href={`/book/${id}`} passHref>
+      <S.Link>
+        <S.Image src={cover} alt={`${title} by ${author}`} />
+      </S.Link>
+    </Link>
 
     <S.Title>{title}</S.Title>
     <S.Author>by {author}</S.Author>
