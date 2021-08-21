@@ -33,5 +33,9 @@ export default {
     overlay: 30,
     modal: 40,
     alwaysOnTop: 50
+  },
+  container: {
+    breakpoint: '790px',
+    gutter: '20px'
   }
 } as const;

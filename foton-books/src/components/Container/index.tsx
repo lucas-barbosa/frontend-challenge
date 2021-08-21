@@ -1,8 +1,13 @@
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 
 const Container = styled.div`
-  padding-left: 20px;
-  padding-right: 20px;
+  ${({ theme }) => css`
+    padding-left: ${theme.container.gutter};
+    padding-right: ${theme.container.gutter};
+    max-width: ${theme.container.breakpoint};
+    width: 100%;
+    margin: auto;
+  `}
 `;
 
 export default Container;
