@@ -30,6 +30,7 @@ const SearchForm = ({ initialValue = '', onChange }: SearchFormProps) => {
         placeholder="Search book"
         onChange={handleChange}
         value={value}
+        autoComplete="off"
       />
     </S.Wrapper>
   );
