@@ -17,7 +17,11 @@ const BookCard = ({
   <S.Wrapper>
     <Link href={`/book/${id}`} passHref>
       <S.Link>
-        <S.Image src={cover} alt={`${title} by ${author}`} />
+        <S.Image
+          src={cover}
+          alt={`${title} by ${author}`}
+          title={`${title} by ${author}`}
+        />
       </S.Link>
     </Link>
 
