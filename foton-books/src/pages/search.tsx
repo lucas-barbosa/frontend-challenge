@@ -17,12 +17,18 @@ export default function Index() {
   const containerRef = useRef(null);
   const onScreen = useOnScreen(containerRef);
 
-  const { items, error, isEmpty, setSize, isLoading, isLastPage } =
-    useInfiniteData<BookProps>(getBooksByName, searchTerm);
+  const {
+    items,
+    error,
+    isEmpty,
+    isLoading,
+    isLastPage,
+    setSize: setPage
+  } = useInfiniteData<BookProps>(getBooksByName, searchTerm);
 
   useEffect(() => {
-    if (onScreen && !isLoading && !isLastPage) setSize((size) => size + 1);
-  }, [onScreen, setSize, isLoading, isLastPage]);
+    if (onScreen && !isLoading && !isLastPage) setPage((size) => size + 1);
+  }, [onScreen, setPage, isLoading, isLastPage]);
 
   return (
     <Search
