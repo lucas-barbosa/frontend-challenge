@@ -3,6 +3,6 @@ export type BookProps = {
   title: string;
   subtitle?: string;
   author?: string;
-  description: string;
-  cover: string;
+  description?: string;
+  cover?: string;
 };

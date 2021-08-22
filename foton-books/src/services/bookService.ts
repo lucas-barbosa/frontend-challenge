@@ -1,6 +1,5 @@
 import axios from 'axios';
 import { BookProps } from 'types/book';
-
 const API_URL = 'https://www.googleapis.com/books/v1/volumes';
 
 type BookResponseData = {
@@ -20,29 +19,40 @@ type SearchBooksResponseData = {
   items: BookResponseData[];
 };
 
-export async function getBookById(id: string): Promise<BookProps | null> {
+export const getBookById = async (id: string): Promise<BookProps | null> => {
   try {
     const { data } = await axios.get<BookResponseData>(`${API_URL}/${id}`);
     return convertResponseToBookType(data);
   } catch {
     return null;
   }
-}
+};
 
 export async function getBooksByName(
   name: string,
   page = 1
 ): Promise<BookProps[]> {
+  const query = new URLSearchParams({
+    q: name,
+    orderBy: 'newest',
+    startIndex: `${page * 10}`
+  });
+
   const { data } = await axios.get<SearchBooksResponseData>(
-    `${API_URL}?q=${name}&startIndex=${(page - 1) * 10}`
+    `${API_URL}?${query.toString()}`
   );
 
-  return data.items?.map(convertResponseToBookType);
+  return data.items ? data.items.map(convertResponseToBookType) : [];
 }
 
 export async function getNewestBooks(): Promise<BookProps[]> {
+  const query = new URLSearchParams({
+    q: 'h',
+    orderBy: 'newest'
+  });
+
   const { data } = await axios.get<SearchBooksResponseData>(
-    `${API_URL}?q=h&orderBy=newest`
+    `${API_URL}?${query.toString()}`
   );
 
   return data.items?.map(convertResponseToBookType);
