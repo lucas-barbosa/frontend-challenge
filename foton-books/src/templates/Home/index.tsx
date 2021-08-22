@@ -31,7 +31,11 @@ const HomePage = ({
     <Container as={S.Title}>
       Hi,&nbsp;
       <span>{username}</span>
-      <img src="/images/emoji.png" alt="handle icon" />
+      <img
+        src="/images/emoji.png"
+        alt="shaking hand icon"
+        title="Shaking Hand Icon"
+      />
     </Container>
 
     <Container as={S.Section}>
