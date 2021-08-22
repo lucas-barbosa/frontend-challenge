@@ -27,7 +27,7 @@ export default createGlobalStyle`
     body {
       background: #fffcf9;
       font-family: ${theme.font.family};
-      font-size: ${theme.font.sizes.medium};
+      font-size: ${theme.font.sizes.normal};
     }
 
     img {
