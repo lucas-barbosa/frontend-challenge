@@ -1,9 +1,8 @@
 import { useRouter } from 'next/router';
-import { useSWRInfinite } from 'swr';
 
 import Search from 'templates/Search';
 import { getBooksByName } from 'services/bookService';
-import { useEffect, useRef, useState } from 'react';
+import { useEffect, useRef } from 'react';
 import { BookProps } from 'types/book';
 import useInfiniteData from 'hooks/useInfiniteData';
 import useOnScreen from 'hooks/useOnScreen';
