@@ -1,10 +1,76 @@
-# Frontend Challenge
+# Foton Books • ![BADGE](https://img.shields.io/github/checks-status/lucas-barbosa/frontend-challenge/master) ![BADGE](https://img.shields.io/github/languages/top/lucas-barbosa/frontend-challenge) ![BADGE](https://img.shields.io/website?url=https%3A%2F%2Ffoton-books-lucasbarbosa.vercel.app) ![BADGE](https://img.shields.io/github/license/lucas-barbosa/frontend-challenge)
 
-Clone this repository and start our challenge **right now**
+Tabela de conteúdos
+=================
+<!--ts-->
+   * [About](#About)
+   * [Status](#Sobre)
+   * [How to use](#How-to-use)
+      * [Requeriments](#requeriments)
+      * [Running Storybook](#running-storybook)
+      * [Running Tests](#running-tests)
+      * [Running Frontend](#running-frontend)
+   * [Stack](#stack)
+   * [API](#api)
+   * [Design/Screens](#Design/Screens)
+<!--te-->
 
-Use React or React Native depending on the rule you are running for.
+## About
+A front-end app developed for Foton Frontend Challenge.
+
+Running at [Vercel](https://foton-books-lucasbarbosa.vercel.app/).
 
 **NOTE:** If you have any questions regarding the test, just send us your question on our Discord's channel **#technical-challenge** on [Foton Discord](https://discord.gg/uw55aDewNf).
+
+## Status
+App finished and deployed at Vercel.
+
+## How to use
+### Requeriments
+You need to have [Git](https://git-scm.com) and [Node.js](https://nodejs.org/en/) installed on your computer to work properly.
+
+### Running Storybook
+
+```bash
+$ git clone https://github.com/lucas-barbosa/frontend-challenge.git
+
+$ cd foton-books
+
+$ yarn storybook
+```
+
+### Running Tests
+
+```bash
+$ git clone https://github.com/lucas-barbosa/frontend-challenge.git
+
+$ cd foton-books
+
+$ yarn test
+```
+
+### Running Frontend
+
+```bash
+$ git clone https://github.com/lucas-barbosa/frontend-challenge.git
+
+$ cd foton-books
+
+$ yarn build
+
+$ yarn start
+```
+
+## Stack
+The following techs were used to make this app.
+
+- [TypeScript](https://www.typescriptlang.org/)
+- [NextJS](https://nextjs.org/)
+- [React](https://reactjs.org/)
+- [Jest](https://jestjs.io/)
+- [Storybook](https://storybook.js.org/)
+- [Eslint](https://eslint.org/)
+
 
 ## API
 
@@ -15,7 +81,7 @@ const query = 'harry potter';
 fetch(`https://www.googleapis.com/books/v1/volumes?q=${query}`);
 ```
 
-**NOTE:** You can use the form of calling apis of your choice (Fetch, Axios, etc).  
+**NOTE:** You can use the form of calling apis of your choice (Fetch, Axios, etc).
 
 ## Design/Screens
 https://www.figma.com/file/KFElqzD983WNyvMY1SaF0c/book-app?node-id=0%3A1
