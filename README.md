@@ -23,7 +23,7 @@ Running at [Vercel](https://foton-books-lucasbarbosa.vercel.app/).
 **NOTE:** If you have any questions regarding the test, just send us your question on our Discord's channel **#technical-challenge** on [Foton Discord](https://discord.gg/uw55aDewNf).
 
 ## Status
-App finished and deployed at Vercel.
+App finished and deployed at Vercel. [Demo](https://foton-books-lucasbarbosa.vercel.app/).
 
 ## How to use
 ### Requeriments
