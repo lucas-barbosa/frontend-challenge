@@ -1,10 +1,10 @@
 # Foton Books • ![BADGE](https://img.shields.io/github/checks-status/lucas-barbosa/frontend-challenge/master) ![BADGE](https://img.shields.io/github/languages/top/lucas-barbosa/frontend-challenge) ![BADGE](https://img.shields.io/website?url=https%3A%2F%2Ffoton-books-lucasbarbosa.vercel.app) ![BADGE](https://img.shields.io/github/license/lucas-barbosa/frontend-challenge)
 
-Tabela de conteúdos
+Content
 =================
 <!--ts-->
    * [About](#About)
-   * [Status](#Sobre)
+   * [Status](#Status)
    * [How to use](#How-to-use)
       * [Requeriments](#requeriments)
       * [Running Storybook](#running-storybook)
@@ -12,7 +12,7 @@ Tabela de conteúdos
       * [Running Frontend](#running-frontend)
    * [Stack](#stack)
    * [API](#api)
-   * [Design/Screens](#Design/Screens)
+   * [Design/Screens](#Design)
 <!--te-->
 
 ## About
@@ -83,7 +83,7 @@ fetch(`https://www.googleapis.com/books/v1/volumes?q=${query}`);
 
 **NOTE:** You can use the form of calling apis of your choice (Fetch, Axios, etc).
 
-## Design/Screens
+## Design
 https://www.figma.com/file/KFElqzD983WNyvMY1SaF0c/book-app?node-id=0%3A1
 
 <img width="581" alt="Screen Shot 2021-04-13 at 10 19 47" src="https://user-images.githubusercontent.com/13947203/114559257-eb55ad00-9c41-11eb-9617-4e7627cc373e.png">
